@@ -12,7 +12,7 @@ jobs:
           command: npm install
 
       - save_cache:
-          key:v1-dependencies-{{ checksum "package.jason" }}
+          key: v1-dependencies-{{ checksum "package.jason" }}
           paths:
             - node_modules
       - run: 
